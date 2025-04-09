@@ -10,7 +10,7 @@ async function buscarDados() {
     resultadoDiv.innerHTML = "Buscando dados...";
 
     try {
-        const response = await fetch("http://localhost:5000/buscar", {
+        const response = await fetch("https://addictive-game-meter.onrender.com", {
             method: "POST",
             headers: { "Content-Type": "application/json" },
             body: JSON.stringify({ nome: input })
